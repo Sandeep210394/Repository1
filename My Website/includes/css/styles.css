@@ -46,6 +46,10 @@ body{
 .navbar-brand{
   padding: 13px 15px;
 }
+.navbar{
+  background-color: #1eb848;
+}
+
 
 
 /* --------------------------------------
@@ -62,9 +66,32 @@ body{
   font-size: 32px;
 }
 #myCarousel .item{
-  height: 400px;
+  height: 540px;
 }
 
+#slide1{
+  background: url('../../images/large-1.jpg') top center no-repeat;
+}
+
+#slide2{
+  background: url('../../images/large-2.jpg') top center no-repeat;
+}
+
+#slide3{
+  background: url('../../images/large-3.jpg') top center no-repeat;
+}
+
+#panel3{
+  background-color: #ff661a;
+}
+.thumbnail{
+  width: 250px;
+  height: 300px;
+}
+
+footer{
+  background-color: #9999ff;
+}
 
 /* --------------------------------------
    Global Styles
@@ -82,16 +109,27 @@ body{
    Media Queries
    -------------------------------------- */
 
+
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-
+.thumbnail{
+  width: 100px;
+  height: 100px;
+}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
 }
+/* Landscape phone to portrait tablet */
+@media (max-width: 1000px) {
+  .thumbnail{
+    width: 100px;
+    height: 100px;
+  }
 
+}
 /* Large desktop */
 @media (min-width: 1200px) {
 
